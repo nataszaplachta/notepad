@@ -1,0 +1,14 @@
+C:\Users\Dell\source\repos\notepad\notepad\notepad\bin\Debug\netcoreapp2.2\notepad.deps.json
+C:\Users\Dell\source\repos\notepad\notepad\notepad\bin\Debug\netcoreapp2.2\notepad.runtimeconfig.json
+C:\Users\Dell\source\repos\notepad\notepad\notepad\bin\Debug\netcoreapp2.2\notepad.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\notepad\notepad\notepad\bin\Debug\netcoreapp2.2\notepad.dll
+C:\Users\Dell\source\repos\notepad\notepad\notepad\bin\Debug\netcoreapp2.2\notepad.pdb
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.RazorAssemblyInfo.cache
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.RazorAssemblyInfo.cs
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.AssemblyInfo.cs
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.RazorTargetAssemblyInfo.cache
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.dll
+C:\Users\Dell\source\repos\notepad\notepad\notepad\obj\Debug\netcoreapp2.2\notepad.pdb

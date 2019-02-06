@@ -13,6 +13,6 @@ namespace notepad.Models
         {
         }
 
-        public DbSet<Note> TodoItems { get; set; }
+        public DbSet<Note> Notes { get; set; }
     }
 }
