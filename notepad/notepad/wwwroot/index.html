@@ -2,10 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Note CRUD</title>
+    <title>Notes</title>
     <style>
+        body {
+            font-family: Calibri;
+            display: block;
+            background: linear-gradient(to left, #a19eab, white, white,#a19eab );
+        }
         input[type='submit'], button, [aria-label] {
             cursor: pointer;
+           
         }
 
         #spoiler {
@@ -13,13 +19,21 @@
         }
 
         table {
-            font-family: Arial, sans-serif;
+            font-family: Calibri;
             border: 1px solid;
             border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
         }
+        h1, h3, form, #counter {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+     
 
         th {
-            background-color: #0066CC;
+            background-color: #8c7bab;
             color: white;
         }
 
@@ -30,10 +44,11 @@
     </style>
 </head>
 <body>
-    <h1>Note CRUD</h1>
+    <h1>Notes</h1>
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-title" placeholder="New note">
+        <input type="text" id="add-title" placeholder="Title">
+        <input type="text" id="add-content" placeholder="Content">
         <input type="submit" value="Add">
     </form>
 
@@ -41,7 +56,8 @@
         <h3>Edit</h3>
         <form class="my-form">
             <input type="hidden" id="edit-id">
-            <input type="text" id="edit-title">
+            <input type="text" id="edit-title" placeholder="Edit title">
+            <input type="text" id="edit-content" placeholder="Edit content">
             <input type="submit" value="Save">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
@@ -52,6 +68,8 @@
     <table>
         <tr>
             <th>Title</th>
+            <th>Note</th>
+            <th>Date</th>
             <th></th>
             <th></th>
         </tr>

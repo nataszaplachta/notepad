@@ -20,13 +20,13 @@ namespace notepad.Controllers
         {
             _context = context;
 
-            if (_context.Notes.Count() == 0)
-            {
-                // Create a new TodoItem if collection is empty,
-                // which means you can't delete all TodoItems.
-                _context.Notes.Add(new Note{ Title = "Note1" });
-                _context.SaveChanges();
-            }
+            //if (_context.Notes.Count() == 0)
+            //{
+            //    // Create a new TodoItem if collection is empty,
+            //    // which means you can't delete all TodoItems.
+            //    _context.Notes.Add(new Note{ Title = "Note1", Content = "abcd", Date = DateTime.Now});
+            //    _context.SaveChanges();
+            //}
         }
         // GET: api/Note
         [HttpGet]

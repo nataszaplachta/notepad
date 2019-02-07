@@ -1,5 +1,6 @@
 ﻿const uri = "api/note";
 let notes = null;
+
 function getCount(data) {
     const el = $("#counter");
     let title = "note";
@@ -31,15 +32,17 @@ function getData() {
 
             $.each(data, function (key, item) {
                 const tr = $("<tr></tr>")
-                    
+
                     .append($("<td></td>").text(item.title))
+                    .append($("<td></td>").text(item.content))
+                    .append($("<td></td>").text(item.date))
                     .append(
                         $("<td></td>").append(
                             $("<button>Edit</button>").on("click", function () {
                                 editItem(item.id);
                             })
-                        )
-                    )
+                        ))
+                    
                     .append(
                         $("<td></td>").append(
                             $("<button>Delete</button>").on("click", function () {
@@ -57,8 +60,12 @@ function getData() {
 }
 
 function addItem() {
+    var dt = new Date();
+    var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
     const item = {
         title: $("#add-title").val(),
+        content: $("#add-content").val(),
+        date: time
     };
 
     $.ajax({
@@ -72,7 +79,8 @@ function addItem() {
         },
         success: function (result) {
             getData();
-            $("#add-title").val("");
+            $("#add-title").val(""),
+            $("#add-content").val("");
         }
     });
 }
@@ -91,6 +99,7 @@ function editItem(id) {
     $.each(notes, function (key, item) {
         if (item.id === id) {
             $("#edit-title").val(item.title);
+            $("#edit-content").val(item.content);
             $("#edit-id").val(item.id);
         }
     });
@@ -100,6 +109,7 @@ function editItem(id) {
 $(".my-form").on("submit", function () {
     const item = {
         title: $("#edit-title").val(),
+        content: $("#edit-content").val(),
         id: $("#edit-id").val()
     };
 
